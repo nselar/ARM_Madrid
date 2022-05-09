@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.ARM_Madrid" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorPrimary">#8BC34A</item>
+        <item name="colorPrimaryDark">#8BC34A</item>
+        <item name="colorAccent">#FF5722</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.ARM_Madrid.NoActionBar">
