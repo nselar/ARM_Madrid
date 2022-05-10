@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ARM_Madrid</string>
+    <string name="app_name">ARM_Maps</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_add_place">addPlaceActivity</string>
     <!-- Strings used for fragments for navigation -->

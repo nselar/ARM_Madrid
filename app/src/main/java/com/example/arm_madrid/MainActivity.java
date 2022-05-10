@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToAddPlace(View view){
 
-        Intent placeIntent = new Intent(getApplicationContext(),AddPlaceActivity.class);
+        Intent placeIntent = new Intent(getApplicationContext(),MapsActivity.class);
+
+        placeIntent.putExtra("putForm", true);
 
         startActivity(placeIntent);
 

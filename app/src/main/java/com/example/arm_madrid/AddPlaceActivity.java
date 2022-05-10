@@ -60,7 +60,7 @@ public class AddPlaceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_place);
+        //setContentView(R.layout.activity_add_place);
 
         try {
 
@@ -74,7 +74,7 @@ public class AddPlaceActivity extends AppCompatActivity {
 
         locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
         listener = new LocListener();
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, listener);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 500, 1, listener);
 
         Intent intent = getIntent();
 
@@ -94,31 +94,4 @@ public class AddPlaceActivity extends AppCompatActivity {
         }
 
     }
-
-    public void saveData(View view){
-
-        SQLiteManager sqLiteManager = new SQLiteManager(this);
-
-        EditText place = findViewById(R.id.nombre);
-        EditText comentario = findViewById(R.id.comentario);
-
-        if(place.getText().toString().isEmpty() || comentario.getText().toString().isEmpty()){
-            Toast.makeText(this, "Todos los campos deben estar rellenos", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        if(isEditing){
-
-            sqLiteManager.editPlace(id,place.getText().toString(), comentario.getText().toString(),prevLat,prevLon);
-
-        }else{
-
-            sqLiteManager.saveData(place.getText().toString(), comentario.getText().toString(), listener.getLat(), listener.getLon());
-
-        }
-
-        Toast.makeText(this, "Información " + (isEditing ? "actualizada" : "guardada") +" correctamente.", Toast.LENGTH_SHORT).show();
-        this.finish();
-    }
-
 }

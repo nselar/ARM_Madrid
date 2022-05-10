@@ -141,8 +141,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
     private void edit(int id, String place, String comment, double lat, double lon){
 
-        Intent placeIntent = new Intent(context,AddPlaceActivity.class);
+        Intent placeIntent = new Intent(context,MapsActivity.class);
 
+        placeIntent.putExtra("putForm", true);
         placeIntent.putExtra("isEditing", true);
         placeIntent.putExtra("id", id);
         placeIntent.putExtra("place", place);
