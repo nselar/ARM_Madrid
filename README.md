@@ -10,4 +10,4 @@ Introducir la API Key en la sección meta-data del AndroidManifest.xml
 # Contribución
 Son bienvenidas las peticiones de pull, pero para realizar cambios mayores, abrir una incidencia (issue) y comentar que se va a cambiar y por qué.
 # Licencias
-[MIT] (https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)
