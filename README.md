@@ -1,5 +1,5 @@
 # ARM_Maps
-ARM-Maps es una aplicación de android para guardar lugares del mapa haciendo uso de Google Maps SDK
+ARM_Maps es una aplicación de android para guardar lugares del mapa haciendo uso de Google Maps SDK
 # Uso
 Introducir la API Key en la sección meta-data del AndroidManifest.xml
 ```xml
